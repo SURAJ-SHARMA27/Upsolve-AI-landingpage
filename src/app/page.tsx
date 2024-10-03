@@ -1,101 +1,67 @@
+import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
+import { CardSpotlightDemo } from "@/components/ui/Card-spot";
+import Cofounders from "@/components/ui/Cofounders";
+import { Features } from "@/components/ui/Features";
+import HeroSection from "@/components/ui/HeroSection";
+import { WavyBackground } from "@/components/ui/wavy-background";
 import Image from "next/image";
+const people = [
+  {
+    id: 1,
+    name: "Ka Ling Wu",
+    designation: "Co-Founder",
+    image:
+      "/founder1.png",
+  },
+  {
+    id: 2,
+    name: "Serguei Balanovich",
+    designation: "Co-Founder",
+    image:
+      "/founder2.png",
 
+  },
+    
+  ];
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className="min-h-screen bg-black/[0.96] antialiased bg-grid-white/[0.02]">
+     <HeroSection/>
+     <Features/>
+     <div className="bg-black height-[40rem] mt-40 relative w-full text-center">
+    <h1 className="mt-30 mb-30 text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+      Meet our founders
+    </h1>
+    <div className="mt-20 flex flex-row items-center justify-center mb-10 w-full">
+      <AnimatedTooltip items={people} />
     </div>
+  </div>
+      <div className="flex flex-wrap justify-center gap-4 mt-20 mb-20">
+     <div className="flex flex-col md:flex-row justify-center gap-4 mt-20">
+     
+  <CardSpotlightDemo
+    title="Rome wasn’t built in a day. Your dashboard will be."
+    description="Connect your data with first-class connectors. Build a dashboard using natural language and an intuitive drag-and-drop interface. Ship your customer-facing analytics dashboard in one day."
+    footer="Ensuring your account is properly secured helps protect your personal information and data."
+  />
+  
+  <CardSpotlightDemo
+    title="Ship & upgrade with a single click."
+    description="Spin up new dashboards or ship upgrades to existing ones with a single click. Just drop in Upsolve's React/Vue component and your dashboard seamlessly becomes a part of your application. Focus on your core product and leave the analytics to Upsolve."
+    footer="Transform data into strategic advantages with our intuitive platform."
+  />
+
+  <CardSpotlightDemo
+    title="Unlock infinite possibilities for your users."
+    description="Customers love Upsolve. We amplify engagement and stickiness by letting your end-users drill down on your data to get custom insights with Upsolve's intuitive AI features. Give customers the superpower to wield their own data and get twice as much value out of your product immediately."
+    footer="Stay ahead of the curve and drive growth through analytics."
+  />
+</div>
+
+</div>
+
+
+    </div>
+    
   );
 }
