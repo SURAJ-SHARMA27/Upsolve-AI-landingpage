@@ -12,14 +12,14 @@ const people = [
     name: "Ka Ling Wu",
     designation: "Co-Founder",
     image:
-      "/founder1.png",
+      "/founder2.png",
   },
   {
     id: 2,
     name: "Serguei Balanovich",
     designation: "Co-Founder",
     image:
-      "/founder2.png",
+      "/founder1.png",
 
   },
     
