@@ -39,11 +39,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-          Features of Upsolve AI
+          Features of Chima AI
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-        Empower your customers with seamless, AI-powered analytics embedded directly into your platform. Let Upsolve handle the data, so you can focus on scaling your business effortlessly.
-        </p>
+        Experience next-level AI-driven functionality that adapts to your needs, helping you stay ahead and make smarter business decisions.        </p>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

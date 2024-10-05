@@ -17,15 +17,13 @@ const HeroSection = () => {
         <div className="mt-40 relative z-10 w-full text-center">
           <h1
             className="mt-30 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400"
-          >
-            Upsolve AI
-          </h1>
+          >Chima AI</h1>
           <p
             className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-lg mx-auto"
           >
-            Your Turnkey Customer-Facing Analytics Solution, Embed analytics
-            for your customers on day one, powered by AI. Request access to
-            experience the full power of Upsolve for yourself.
+           The Intelligent Enterprise.
+           Chima is building the future of Enterprise AGI.
+           We are pioneering the Compound Human Reasoning system to perform any workflow, role or function for your business.
           </p>
           <div className="mt-10">
             <Button
@@ -33,7 +31,7 @@ const HeroSection = () => {
               className="bg-[#1a1a1a]  text-black dark:text-white border-neutral-200 dark:border-slate-800"
               duration={4000}
             >
-              <Link href={"/request"}>Request Access</Link>
+              <Link href={"/request"}>Get Started</Link>
             </Button>
           </div>
           

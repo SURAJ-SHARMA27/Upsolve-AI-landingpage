@@ -9,17 +9,17 @@ import Link from "next/link";
 const people = [
   {
     id: 1,
-    name: "Ka Ling Wu",
+    name: "Nikhara Nirghin",
     designation: "Co-Founder",
     image:
-      "/founder2.png",
+      "/founder2n.png",
   },
   {
     id: 2,
-    name: "Serguei Balanovich",
+    name: "Kiara Nirghin",
     designation: "Co-Founder",
     image:
-      "/founder1.png",
+      "/founder1n.png",
 
   },
     
@@ -41,20 +41,20 @@ export default function Home() {
      <div className="flex flex-col md:flex-row justify-center gap-4 mt-20">
      
   <CardSpotlightDemo
-    title="Rome wasn’t built in a day. Your dashboard will be."
-    description="Connect your data with first-class connectors. Build a dashboard using natural language and an intuitive drag-and-drop interface. Ship your customer-facing analytics dashboard in one day."
+    title="Agentic System"
+    description="We build the industry's leading AI Systems, purpose-built for the Enterprise, enabling the quick and accurate automation of workflows of any complexity. From manual tasks to multi-step processes, we lead with advanced models to handle it all."
     footer="Ensuring your account is properly secured helps protect your personal information and data."
   />
   
   <CardSpotlightDemo
-    title="Ship & upgrade with a single click."
-    description="Spin up new dashboards or ship upgrades to existing ones with a single click. Just drop in Upsolve's React/Vue component and your dashboard seamlessly becomes a part of your application. Focus on your core product and leave the analytics to Upsolve."
+    title="Specialized Use Cases"
+    description="Once integrated end-to-end, our Human Reasoning Systems are deployed across business functions like marketing, customer support, sales, operations, compliance, security and beyond."
     footer="Transform data into strategic advantages with our intuitive platform."
   />
 
   <CardSpotlightDemo
-    title="Unlock infinite possibilities for your users."
-    description="Customers love Upsolve. We amplify engagement and stickiness by letting your end-users drill down on your data to get custom insights with Upsolve's intuitive AI features. Give customers the superpower to wield their own data and get twice as much value out of your product immediately."
+    title="Custom Interfaces"
+    description="We deploy our Systems’ capabilities in custom enterprise interfaces, built and intelligently refined with each interaction. We go beyond chat interfaces with embedded workflows."
     footer="Stay ahead of the curve and drive growth through analytics."
   />
    
